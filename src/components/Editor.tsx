@@ -149,7 +149,7 @@ const TinyEditor: FC<IArticle> = (props) => {
                     />
                 </div>
                 <button type="submit" className="bg-sky-600 rounded p-2 text-white mt-5 disabled:bg-sky-200 focus:ring-2 text-right">
-                    {isLoading ? 'Отправка данных...' : 'Sign in'}
+                    {isLoading ? 'Отправка данных...' : 'Сохранить'}
                 </button>
             </form>
         </section>

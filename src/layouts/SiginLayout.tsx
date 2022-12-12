@@ -5,7 +5,7 @@ interface IProps {
 }
 
 const SiginLayout: FC<IProps> = ({ children }) => (
-    <div className="flex justify-center items-center w-[vw] h-[100vh] bg-gradient-to-r from-purple-500 to-pink-500">
+    <div className="grid place-content-center h-[100vh] bg-gradient-to-r from-purple-500 to-pink-500">
         {children}
     </div>
 );

@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { useParams } from 'react-router-dom';
 
 import Editor from '../components/Editor';
-import MainLayout from '../layouts/MainLayout';
+import EditorLayout from '../layouts/EditorLayout';
 import { useGetArticleQuery } from '../__data__/services/articles';
 
 const EditorPage: FC = () => {
@@ -10,7 +10,7 @@ const EditorPage: FC = () => {
     const { data, error, isLoading } = useGetArticleQuery(params.id);
 
     return (
-        <MainLayout>
+        <EditorLayout>
             {isLoading && (
                 <p className="w-1/2 mx-auto text-center">Загрузка постов...</p>
             )}
@@ -23,7 +23,7 @@ const EditorPage: FC = () => {
                     <Editor {...data.article} />
                 </section>
             )}
-        </MainLayout>
+        </EditorLayout>
     );
 };
 
