@@ -1,8 +1,4 @@
-'use client'
-
-import React from 'react'
 import { Inter } from 'next/font/google'
-import { SessionProvider } from 'next-auth/react'
 
 import './globals.css'
 
@@ -12,17 +8,16 @@ const inter = Inter({
 })
 
 export default function RootLayout({
-    children
+    children,
 }: {
     children: React.ReactNode
 }) {
     return (
         <html lang="en" className={inter.className}>
             <body>
-                <SessionProvider>
-                    {children}
-                </SessionProvider>
+                {children}
             </body>
         </html>
     )
 }
+  

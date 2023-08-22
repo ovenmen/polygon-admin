@@ -1,0 +1,7 @@
+export { Table } from './table'
+export { TableCaption } from './table-caption'
+export { TableHead } from './table-head'
+export { TableBody } from './table-body'
+export { TableRow } from './table-row'
+export { TableCell } from './table-cell'
+export { TableHeaderCell } from './table-header-cell'

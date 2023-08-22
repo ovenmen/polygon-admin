@@ -6,8 +6,15 @@ const nextConfig = {
                 protocol: 'https',
                 hostname: 'lh3.googleusercontent.com'
             },
-        ],
+            {
+                protocol: 'https',
+                hostname: 'avatars.yandex.net'
+            }
+        ]
     },
+    eslint: {
+        dirs: ['app', 'components']
+    }
 }
    
 module.exports = nextConfig

@@ -1,12 +1,7 @@
 {
     "extends": [
-        "eslint:recommended",
-        "next/core-web-vitals",
         "plugin:react/recommended",
-        "plugin:react-hooks/recommended"
-    ],
-    "plugins": [
-        "react-hooks"
+        "next/core-web-vitals"
     ],
     "rules": {
         "indent": ["error", 4],
