@@ -3,19 +3,20 @@ import { usePathname } from 'next/navigation'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGears, faChartColumn, faNewspaper, faUsers } from '@fortawesome/free-solid-svg-icons'
 
+const links = [
+    ['Dashboard', '/admin', 'faChartColumn'],
+    ['Content', '/admin/content', 'faNewspaper'],
+    ['Users', '/admin/users', 'faUsers'],
+    ['Settings', '/admin/settings', 'faGears']
+]
+const icons = {
+    'faChartColumn': faChartColumn,
+    'faNewspaper': faNewspaper,
+    'faUsers': faUsers,
+    'faGears': faGears
+}
+
 export default function AsideMenu() {
-    const links = [
-        ['Dashboard', '/admin', 'faChartColumn'],
-        ['Content', '/admin/content', 'faNewspaper'],
-        ['Users', '/admin/users', 'faUsers'],
-        ['Settings', '/admin/settings', 'faGears']
-    ]
-    const icons = {
-        'faChartColumn': faChartColumn,
-        'faNewspaper': faNewspaper,
-        'faUsers': faUsers,
-        'faGears': faGears
-    }
     const pathname = usePathname()
 
     return (

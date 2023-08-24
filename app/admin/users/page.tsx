@@ -29,10 +29,7 @@ export const metadata: Metadata = {
 export default function UsersPage() {
     return (
         <>
-            <Table
-                tableHeads={tableHeads}
-                tableRows={tableRows}
-            />
+            
         </>
     )
 }
